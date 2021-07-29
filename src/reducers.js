@@ -21,4 +21,6 @@ export function counter(state = defaultState, action) {
   }
 }
 
-
+export const rootReducer = combineReducers({
+  count: counter,
+});
